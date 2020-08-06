@@ -7,7 +7,7 @@ public class pwdGenCLI
 		boolean cont = true;
 		if (args.length != 3)
 		{
-			showHelp(args);
+			showHelp();
 			cont = false;
 		}
 		do
@@ -20,7 +20,7 @@ public class pwdGenCLI
 
 	}
 
-	public static void showHelp(String[] args)
+	public static void showHelp()
 	{
 		System.out.println("Argument Example: 1234 5 7");
 		System.out.println("The above will generate a password using upper and lowercase characters, numbers. and symbols.");
